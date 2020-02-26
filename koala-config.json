@@ -11,6 +11,10 @@
 		{
 			"src": "./about/scss",
 			"dest": "./about/css"
+		},
+		{
+			"src": "./buy/scss",
+			"dest": "./buy/css"
 		}
 	],
 	"ignores": ["*.css"],
