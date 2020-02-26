@@ -15,6 +15,10 @@
 		{
 			"src": "./buy/scss",
 			"dest": "./buy/css"
+		},
+		{
+			"src": "./connect/scss",
+			"dest": "./connect/css"
 		}
 	],
 	"ignores": ["*.css"],
