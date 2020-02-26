@@ -7,6 +7,10 @@
 		{
 			"src": "./listen/scss",
 			"dest": "./listen/css"
+		},
+		{
+			"src": "./about/scss",
+			"dest": "./about/css"
 		}
 	],
 	"ignores": ["*.css"],
