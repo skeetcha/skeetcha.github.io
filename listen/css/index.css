@@ -73,12 +73,12 @@
   clear: both;
   display: table; }
 
-html {
-  font-family: "Lucida Sans", sans-serif; }
-
 /* Coolors Exported Palette - coolors.co/cddddd-2e2f2f-9cbfa7-61c9a8-88bb92 */
 body {
   background-color: #256d56; }
+
+html {
+  font-family: "Lucida Sans", sans-serif; }
 
 /* Coolors Exported Palette - coolors.co/cddddd-2e2f2f-9cbfa7-61c9a8-88bb92 */
 h2 {
