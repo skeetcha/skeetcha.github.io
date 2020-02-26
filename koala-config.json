@@ -1,9 +1,9 @@
 {
 	"mappings": [
-		// {
-		// 	"src": "path/to/source",
-		// 	"dest": "path/to/output"
-		// }
+		{
+			"src": "./scss",
+			"dest": "./css"
+		}
 	],
 	"ignores": ["*.css"],
 	"options": {
