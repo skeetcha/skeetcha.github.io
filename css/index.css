@@ -100,3 +100,7 @@ h2 {
 .menu li:hover {
   background-color: #2e2f2f;
   color: #cddddd; }
+
+img {
+  height: auto;
+  max-width: 100%; }
