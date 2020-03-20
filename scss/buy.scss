@@ -1,0 +1,10 @@
+@import "../utilities/colors";
+@import "../utilities/formatting";
+@import "../utilities/menu";
+@import "../utilities/header";
+@import "../utilities/body-color";
+
+.text {
+    color: $color1-darkmode;
+    text-align: center;
+}

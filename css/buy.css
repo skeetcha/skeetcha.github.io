@@ -201,3 +201,48 @@
   content: "";
   clear: both;
   display: table; }
+
+/* Coolors Exported Palette - coolors.co/cddddd-2e2f2f-9cbfa7-61c9a8-88bb92 */
+.nav-button {
+  border: 1px solid #cddddd;
+  background-color: #2d4e33;
+  color: #cddddd;
+  text-align: center;
+  padding: 5px;
+  display: grid;
+  cursor: pointer; }
+
+.nav-button:hover {
+  border: 1px solid #2d4e33;
+  background-color: #cddddd;
+  color: #2d4e33; }
+
+@media screen and (prefers-color-scheme: light) {
+  .nav-button {
+    border: 1px solid #2e2f2f;
+    background-color: #cddddd;
+    color: #2e2f2f; }
+
+  .nav-button:hover {
+    border: 1px solid #cddddd;
+    background-color: #2e2f2f;
+    color: #cddddd; } }
+/* Coolors Exported Palette - coolors.co/cddddd-2e2f2f-9cbfa7-61c9a8-88bb92 */
+.header {
+  background-color: #2d4e33;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #88bb92; }
+
+@media screen and (prefers-color-scheme: light) {
+  .header {
+    background-color: #88bb92;
+    color: #2d4e33; } }
+/* Coolors Exported Palette - coolors.co/cddddd-2e2f2f-9cbfa7-61c9a8-88bb92 */
+body {
+  background-color: #256d56; }
+
+.text {
+  color: #213030;
+  text-align: center; }
