@@ -1,20 +1,30 @@
 @import "./colors";
 
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    padding: 8px;
-    margin-bottom: 7px;
-    background-color: $color1;
-    color: $color2;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.menu li:hover {
-    background-color: $color2;
+.nav-button {
+    border: 1px solid $color1;
+    background-color: $color5-darkmode;
     color: $color1;
+    text-align: center;
+    padding: 5px;
+    display: grid;
+}
+
+.nav-button:hover {
+    border: 1px solid $color5-darkmode;
+    background-color: $color1;
+    color: $color5-darkmode;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .nav-button {
+        border: 1px solid $color2;
+        background-color: $color1;
+        color: $color2;
+    }
+
+    .nav-button:hover {
+        border: 1px solid $color1;
+        background-color: $color2;
+        color: $color1;
+    }
 }
