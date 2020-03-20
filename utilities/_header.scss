@@ -1,0 +1,16 @@
+@import "./colors";
+
+.header {
+    background-color: $color5-darkmode;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: $color5;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .header {
+        background-color: $color5;
+        color: $color5-darkmode;
+    }
+}

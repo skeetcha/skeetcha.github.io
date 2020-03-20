@@ -21,7 +21,7 @@
 			"dest": "./connect/css"
 		}
 	],
-	"ignores": ["*.css"],
+	"ignores": ["*.css", "*.js"],
 	"options": {
 		"outputStyle": "nested",
 		"lineComments": false,

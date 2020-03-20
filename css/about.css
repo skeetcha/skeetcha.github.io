@@ -243,6 +243,9 @@
 body {
   background-color: #256d56; }
 
-img {
-  height: auto;
-  width: 100%; }
+p {
+  color: #cddddd; }
+
+@media screen and (prefers-color-scheme: light) {
+  p {
+    color: #2e2f2f; } }

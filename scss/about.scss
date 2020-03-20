@@ -4,7 +4,12 @@
 @import "../utilities/header";
 @import "../utilities/body-color";
 
-img {
-    height: auto;
-    width: 100%;
+p {
+    color: $color1;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    p {
+        color: $color2;
+    }
 }
