@@ -1,0 +1,39 @@
+@import "../utilities/colors";
+@import "../utilities/formatting";
+@import "../utilities/menu";
+@import "../utilities/header";
+@import "../utilities/body-color";
+@import "../utilities/embed";
+
+.heading {
+    color: $color2;
+    text-align: center;
+}
+
+p {
+    color: $color2;
+}
+
+.info {
+    text-align: center;
+    width: 100%;
+}
+
+.sub-form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+    .sub-form-container {
+        height: 908px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .sub-form-container {
+        height: 978px;
+    }
+}
