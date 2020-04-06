@@ -3,3 +3,17 @@
 body {
     background-color: $color4-darkmode;
 }
+
+html {
+    background-color: $color5-darkmode;
+}
+
+div p {
+    color: $color1;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    div p {
+        color: $color5;
+    }
+}
