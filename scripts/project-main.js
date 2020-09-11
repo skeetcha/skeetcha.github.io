@@ -21,6 +21,18 @@ function update_portfolio_buttons(projectName) {
 
         $('.button:last-of-type a').click(function(e) {
             e.preventDefault();
+            window.location = 'portfolio-item.html#bulletrush';
+            window.location.reload();
+        });
+    } else if (projectName === 'bulletrush') {
+        $('.button:first-of-type a').click(function(e) {
+            e.preventDefault();
+            window.location = 'portfolio-item.html#shutin';
+            window.location.reload();
+        });
+
+        $('.button:last-of-type a').click(function(e) {
+            e.preventDefault();
         });
     }
 }
@@ -75,6 +87,9 @@ jQuery(document).ready(function($){
             "project.shutin.long-description.2": "The film was then premiered at the Lincoln High School theatre to a packed house after which the crew got up on stage and held a short Q+A session with the audience. As far as I'm aware (as I was not told about this and found out through social media), the short film was also entered into a short film contest in which it won an award.",
             "project.bulletrush.title": "Bullet Rush",
             "project.bulletrush.description": "Cuphead meets First Person Shooter games - Programmer, Project Manager",
+            "project.bulletrush.long-description.1": "During the Fall 2019 semester, I took the Computer Game Technologies course at University of the Pacific where I learned both Video Game Design and Development. We were to pitch ideas to the class and then everyone voted on which projects they wanted to work on and what roles they had desired. Since I had already worked as a Project Manager on my Application Development team (even though I was never officially designated as such), I chose that role. I was assigned to the Bullet Rush team and oversaw the development of the game.",
+            "project.bulletrush.long-description.2": "We were a small team of four working on this project with a Lead Programmer, a generic Programmer, and a Media Director also assigned to the project. Our final for the class consisted of our project showcase where our classmates (and anyone else we had invited) could play our games and give us feedback.",
+            "project.bulletrush.link": "Bitbucket Respository",
             "projects.title": "Projects",
             "projects.skills.label": "Skills:",
             "projects.skills.list": "Final Cut Pro X, Python, C#, Unity"
@@ -101,6 +116,9 @@ jQuery(document).ready(function($){
             "project.shutin.long-description.2": "",
             "project.bulletrush.title": "Bullet Rush",
             "project.bulletrush.description": "Cuphead in Anlehnung an Ego-Shooter-Spiele - Programmierer, Projektleiter",
+            "project.bulletrush.long-description.1": "",
+            "project.bulletrush.long-description.2": "",
+            "project.bulletrush.link": "",
             "projects.title": "",
             "projects.skills.label": "",
             "projects.skills.list": ""
