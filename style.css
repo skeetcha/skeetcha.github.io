@@ -64,7 +64,7 @@ a, a:visited {
     transition: color 0.1s ease-in-out;
 }
 a:hover, a:active {
-    color: #212425;
+    color: #6a9e95;
     text-decoration: none;
 }
 
@@ -796,6 +796,7 @@ nav[role="navigation"] {
   -moz-transition: -moz-transform 0.3s;
   transition: transform 0.3s;
 }
+
 .cd-pagination.animated-buttons .button:last-of-type a::after {
   -webkit-transform: translateX(-50%) rotate(180deg);
   -moz-transform: translateX(-50%) rotate(180deg);
@@ -1340,8 +1341,53 @@ nav[role="navigation"] {
 
 }
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .project.project-page div.thumb,div.project-content-container {
     width: 50%;
     float: left;
     padding: 10px;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+.project.project-page:not(.active-project) {
+    display: none;
 }
