@@ -87,6 +87,9 @@ jQuery(document).ready(function($){
 
             "project.dndcombatsim.title": "Dungeons and Dragons Combat Simulator",
             "project.dndcombatsim.description": "Combat simulator for the 5th Edition of the Tabletop RPG Dungeons and Dragons - Programmer, Project Manager",
+            "project.dndcombatsim.long-description.1": "During the Fall 2018 semester, I took the Application Development course at University of the Pacific where I learned the joys and perils of working on a team to develop some piece of software. We were assigned into groups and told to come up with a project proposal for the final project of the class. Next came writing up system requirements documents and having team meetings each week (usually) to discuss and work on the program. Unlike the Bullet Rush project that I was later part of the next year, we didn't have specific roles; we mostly just chose them in amongst our teams. I saw the position of team leader/project manager unfilled and I rose to fill it.",
+            "project.dndcombatsim.long-description.2": "The program takes information from the website 5e.tools in the form of a JSON lookup table and spawns in monster information along with weapon information and a bit of randomness to make the combat simulator work. In the programming field, I mostly worked on sorting through all of the JSON data to make it contain only the data we needed for the project. I also worked to implement the JSON data into the program along with other general backend programming.",
+            "project.dndcombatsim.link": "Because we used data from 5e.tools, I am not including a link to the repository here.",
 
             "projects.title": "Projects",
             "projects.skills.label": "Skills:",
