@@ -91,6 +91,9 @@ jQuery(document).ready(function($){
             "project.dndcombatsim.long-description.2": "The program takes information from the website 5e.tools in the form of a JSON lookup table and spawns in monster information along with weapon information and a bit of randomness to make the combat simulator work. In the programming field, I mostly worked on sorting through all of the JSON data to make it contain only the data we needed for the project. I also worked to implement the JSON data into the program along with other general backend programming.",
             "project.dndcombatsim.link": "Because we used data from 5e.tools, I am not including a link to the repository here.",
 
+            "project.cansat.title": "CanSat",
+            "project.cansat.description": "A simulated sattelite in an enclosure the shape and size of a soda can - Programmer",
+
             "projects.title": "Projects",
             "projects.skills.label": "Skills:",
             "projects.skills.list": "Final Cut Pro X, Python, C#, Unity",
