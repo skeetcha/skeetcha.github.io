@@ -37,6 +37,7 @@ jQuery(document).ready(function($){
             "socials.instagram": "Instagram",
             "socials.twitter": "Twitter",
             "socials.facebook": "Facebook",
+            "socials.youtube": "YouTube",
 
             "menu.showcase": "Showcase",
             "menu.blog": "Blog",
