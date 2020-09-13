@@ -60,6 +60,9 @@ jQuery(document).ready(function($){
 
             "project.cansat.title": "CanSat",
             "project.cansat.description": "A simulated sattelite in an enclosure the shape and size of a soda can - Programmer",
+            "project.cansat.long-description.1": "When I was in my third year of high school, my dad (who taught at my high school) offered me and a couple of his Computer Science students an offer to work on an after school project involving a simulated sattelite in the shape and size of a soda can run by an Arduino. I had messed around with an Arduino a little bit and had taken the Digital Design course at San Joaquin Delta College (which was likely called something else, but Digital Design is the equivalent course at University of the Pacific) so I knew a little bit about the skills the project would require. Eventually, we were connected with Ted Tagami of Magnitude.io with the project and eventually he took the project and pushed it into schools.",
+            "project.cansat.long-description.2": "I ended up taking an internship with Magnitude to help them give out CanSats and their other program known as the ExoLab to teachers and students in my local area. However, when I was in my last year of high school, I was part of adapting the CanSat project into a larger project that would go up into low-Earth orbit. That project consisted of working both with Magnitudio.io engineers and with students at the University of Pacific School of Engineering and Computer Science under Dr. Elizabeth Basha. The CanSat was eventually launched into low-Earth orbit in November 2019.",
+            "project.cansat.link": "More Information",
 
             "projects.title": "Projects",
             "projects.skills.label": "Skills:",
