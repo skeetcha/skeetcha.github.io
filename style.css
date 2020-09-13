@@ -1461,3 +1461,7 @@ textarea {
     padding: 10px;
     font-family: 'quicksand', Arial, sans-serif;
 }
+
+li.button-submit {
+    display: inline-block;
+}
