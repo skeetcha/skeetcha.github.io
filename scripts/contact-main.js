@@ -1,5 +1,24 @@
 var update_texts = function() { $('body').i18n(); };
 var get_lang_code = function(el) { return el.attributes["data-locale"].value; };
+var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function validateForm() {
+    return ($('#contact-name').val() !== '') && ($('#contact-email').val() !== '') && ($('#contact-message').val() !== '') && ($('#contact-email').val().match(emailRegex));
+}
+
+function showValidation(el, name) {
+    if (name === 'email') {
+        if (el.val() === '') {
+            alert('Email field is empty.');
+        } else if (!el.val().match(emailRegex)) {
+            alert('Email field does not contain an email.');
+        }
+    } else {
+        if (el.val() === '') {
+            alert(name + ' field is empty.');
+        }
+    }
+}
 
 jQuery(document).ready(function($){
 	var isLateralNavAnimating = false;
@@ -150,6 +169,38 @@ jQuery(document).ready(function($){
                 }
             }
         }
+    });
+
+    $('.button-submit a').click(function(e) {
+        e.preventDefault();
+
+        if (!validateForm()) {
+            showValidation($('#contact-name'), 'Name');
+            showValidation($('#contact-email'), 'email');
+            showValidation($('#contact-message'), 'Message');
+            return false;
+        }
+
+        alert('Your message is sending. You will see a notification saying "OK" if your message sent. Press Okay to close this message.');
+
+        var name = $('#contact-name').val();
+        var email = $('#contact-email').val();
+        var message = $('#contact-message').val();
+
+        $('#contact-name').val('');
+        $('#contact-email').val('');
+        $('#contact-message').val('');
+
+        // Send email
+        Email.send({
+            SecureToken: '35f5af2e-8f3d-4aea-99a0-cefbd03bb7f6',
+            To: 'cityboundforest@gmail.com',
+            From: email,
+            Subject: 'Message from Website',
+            Body: name + ' just sent you a message!\n\n' + message
+        }).then(
+            message => alert(message)
+        );
     });
 });
 

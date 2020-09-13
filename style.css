@@ -760,6 +760,17 @@ nav[role="navigation"] {
   transition: border 1s;
 }
 
+.button-submit a:hover {
+    border: 1px solid #212425;
+    -webkit-transition: border 1s;
+    -moz-transition: border 1s;
+    transition: border 1s;
+}
+
+.button-submit i {
+    font-style: normal;
+}
+
 .cd-pagination.custom-icons .button:first-of-type a::before {
   left: .8em;
 }
@@ -1430,4 +1441,23 @@ nav[role="navigation"] {
 
 .news:not(.active-news-page) {
     display: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+}
+
+.input input,
+.input textarea {
+    margin: auto;
+    width: 50%;
+    display: block;
+    border-radius: 7px;
+    padding: 10px;
+    font-family: 'quicksand', Arial, sans-serif;
 }
