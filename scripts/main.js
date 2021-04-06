@@ -32,7 +32,8 @@ jQuery(document).ready(function($){
             "menu.docs": "Docs",
             "menu.contact": "Contact",
 
-            "title.message": "Hello I'm Cass Unterholzner. I'm a storyteller working in the media of film, theatre, video games, and music.",
+            "title.message.1": "Hello I'm Cass Unterholzner.",
+            "title.message.2": "I'm a storyteller working in the media of film, theatre, video games, and music.",
 
             "footer.copyright": "© Copyright Cass Unterholzner 2020.",
 
