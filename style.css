@@ -182,11 +182,19 @@ pre {
   margin-bottom: 2rem;
 }
 
+.site-header {
+    background-image: url("img/banner.png");
+    background-color: #008037;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /*===== Titles =====*/
 .site-title {
     font-family: 'Righteous',helvetica,sans-serif;
     font-size: 26px;
-    color: #28675d;
+    color: #069780;
+    background-color: rgba(20, 20, 20, 0.2);
     line-height: 1.5em;
     position: relative;
     z-index: 12;
@@ -195,12 +203,14 @@ pre {
 }
 .site-title a {
     position: fixed;
+    padding: 10px;
 }
 .site-title a,
 .site-title a:visited { color: #28675d; }
 .site-title a:hover,
 .site-title a:active {
-    color: #28675d;
+    color: #069780;
+    background-color: rgba(20, 20, 20, 0.2);
     opacity: 0.8;
 }
 .site-title div { display: inline; }
@@ -208,6 +218,8 @@ pre {
     clear: both;
     margin-bottom: 40px;
     width: 100%;
+    background-color: rgba(20, 20, 20, 0.3);
+    padding: 10px;
 }
 .site-tagline p {
     color: #e1e1e1;
@@ -1054,7 +1066,7 @@ nav[role="navigation"] {
 
 @media only screen and (min-width: 600px) {
 
-    /*===== Structures =====*/
+    /*===== Structure s =====*/
     .site-header,
     .page-desc {
         padding: 60px;
