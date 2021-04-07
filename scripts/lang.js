@@ -1,4 +1,4 @@
-{
+var language_data = {"en": {
     "socials.instagram": "Instagram",
     "socials.twitter": "Twitter",
     "socials.facebook": "Facebook",
@@ -10,7 +10,8 @@
     "menu.docs": "Docs",
     "menu.contact": "Contact",
 
-    "title.message": "Hello I'm Cass Unterholzner.\n\nI'm a storyteller working in the *media* of film, theatre, video games, and music.",
+    "title": "CityboundForest",
+    "title.message": "Hello I'm **Cass Unterholzner.**  \nI'm a storyteller working in the media of $1[**film**], $2[**theatre**], $3[**video games**], and $4[**music**].",
 
     "footer.copyright": "© Copyright Cass Unterholzner 2020.",
 
@@ -88,4 +89,5 @@
     "contact.placeholder.name": "Name *",
     "contact.placeholder.email": "Email *",
     "contact.submit": "Submit"
-}
+},
+"de":{}};

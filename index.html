@@ -50,7 +50,7 @@
                 <div class="site-title"><a href="index.html">C/B/F</a></div>
                 <div class="cf"></div>
                 <div class="site-tagline">
-                    <p><strong>CityboundForest</strong><br /><div data-i18n="title.message.1" style="font-size:18pt;">Hello I'm <strong>Cass Unterholzner.</strong></div><div data-i18n="title.message.2" style="font-size:18pt;">I'm a storyteller working in the media of <strong>film</strong>, <strong>theatre</strong>, <strong>video games</strong>, and <strong>music</strong>.</div>
+                    <p><strong data-i18n="[html]title">CityboundForest</strong></p><!--<div data-i18n="title.message.1" style="font-size:18pt;">Hello I'm <strong>Cass Unterholzner.</strong></div><div data-i18n="title.message.2" style="font-size:18pt;">I'm a storyteller working in the media of <strong>film</strong>, <strong>theatre</strong>, <strong>video games</strong>, and <strong>music</strong>.</div>--><div data-i18n="" style="font-size:18pt;">Hello I'm <strong>Cass Unterholzner.</strong><br />I'm a storyteller working in the media of <strong style="color:#00eeff;">film</strong>, <strong style="color:#fffb00;">theatre</strong>, <strong style="color:#ff3e3e;">video games</strong>, and <strong style="color:#ff70e7;">music</strong>.</div>
                 </div>
             </header><!-- / .site-header -->
             <section class="site-content">
@@ -72,8 +72,8 @@
                                 <div class="project-content">
                                     <div class="table">
                                         <div class="table-cell">
-                                            <h2 class="thumbnail-title" data-i18n="project.mememachine.title">Meme Machine</h2>
-                                            <p class="thumbnail-description" data-i18n="project.mememachine.description">Download, Rate, and Create Memes - Programmer</p>
+                                            <h2 class="thumbnail-title" data-i18n="[html]project.mememachine.title">Meme Machine</h2>
+                                            <p class="thumbnail-description" data-i18n="[html]project.mememachine.description">Download, Rate, and Create Memes - Programmer</p>
                                         </div>
                                     </div>
                                 </div>
@@ -98,8 +98,8 @@
                                 <div class="project-content">
                                     <div class="table">
                                         <div class="table-cell">
-                                            <h2 class="thumbnail-title" data-i18n="project.shutin.title">Shut In</h2>
-                                            <p class="thumbnail-description" data-i18n="project.shutin.description">Short Film - Gaffer, Foley Artist, Sound Editor</p>
+                                            <h2 class="thumbnail-title" data-i18n="[html]project.shutin.title">Shut In</h2>
+                                            <p class="thumbnail-description" data-i18n="[html]project.shutin.description">Short Film - Gaffer, Foley Artist, Sound Editor</p>
                                         </div>
                                     </div>
                                 </div>
@@ -124,8 +124,8 @@
                                 <div class="project-content">
                                     <div class="table">
                                         <div class="table-cell">
-                                            <h2 class="thumbnail-title" data-i18n="project.bulletrush.title">Bullet Rush</h2>
-                                            <p class="thumbnail-description" data-i18n="project.bulletrush.description">Cuphead meets First Person Shooter games - Programmer, Project Manager</p>
+                                            <h2 class="thumbnail-title" data-i18n="[html]project.bulletrush.title">Bullet Rush</h2>
+                                            <p class="thumbnail-description" data-i18n="[html]project.bulletrush.description">Cuphead meets First Person Shooter games - Programmer, Project Manager</p>
                                         </div>
                                     </div>
                                 </div>
@@ -150,8 +150,8 @@
                                 <div class="project-content">
                                     <div class="table">
                                         <div class="table-cell">
-                                            <h2 class="thumbnail-title" data-i18n="project.dndcombatsim.title">Dungeons and Dragons Combat Simulator</h2>
-                                            <p class="thumbnail-description" data-i18n="project.dndcombatsim.description">Combat simulator for the 5th Edition of the Tabletop RPG Dungeons and Dragons - Programmer, Project Manager</p>
+                                            <h2 class="thumbnail-title" data-i18n="[html]project.dndcombatsim.title">Dungeons and Dragons Combat Simulator</h2>
+                                            <p class="thumbnail-description" data-i18n="[html]project.dndcombatsim.description">Combat simulator for the 5th Edition of the Tabletop RPG Dungeons and Dragons - Programmer, Project Manager</p>
                                         </div>
                                     </div>
                                 </div>
@@ -176,8 +176,8 @@
                                 <div class="project-content">
                                     <div class="table">
                                         <div class="table-cell">
-                                            <h2 class="thumbnail-title" data-i18n="project.cansat.title">CanSat</h2>
-                                            <p class="thumbnail-description" data-i18n="project.cansat.description">A simulated sattelite in an enclosure the shape and size of a soda can - Programmer</p>
+                                            <h2 class="thumbnail-title" data-i18n="[html]project.cansat.title">CanSat</h2>
+                                            <p class="thumbnail-description" data-i18n="[html]project.cansat.description">A simulated sattelite in an enclosure the shape and size of a soda can - Programmer</p>
                                         </div>
                                     </div>
                                 </div>
@@ -190,7 +190,7 @@
                 <!--END .site-content-->
             </section>
             <footer class="site-footer cf">
-                <p class="footer-text" data-i18n="footer.copyright">© Copyright Cass Unterholzner 2020. </p>
+                <p class="footer-text" data-i18n="[html]footer.copyright">© Copyright Cass Unterholzner 2020. </p>
                 <nav class="languages" role="navigation">
                     <ul>
                         <li class="active lang-switch-parent"><a href="#" class="lang-switch" data-locale="en">EN</a> |</li>
@@ -211,6 +211,8 @@
         <script src="scripts/jquery_i18n/jquery.i18n.parser.js"></script>
         <script src="scripts/jquery_i18n/jquery.i18n.emitter.js"></script>
         <script src="scripts/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+        <script src="scripts/showdown.min.js"></script>
+        <script src="scripts/lang.js"></script>
         <script src="scripts/main.js"></script>
     </body>
 </html>
