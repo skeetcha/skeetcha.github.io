@@ -23,10 +23,10 @@
                 <div class="cd-half-block">
                     <nav>
                         <ul class="cd-primary-nav">
-                            <li><a href="index.html" class="selected" data-i18n="menu.showcase">Showcase</a></li>
-                            <li><a href="blog.html" data-i18n="menu.blog">Blog</a></li>
-                            <li><a href="about.html" data-i18n="menu.about">About</a></li>
-                            <li><a href="contact.html" data-i18n="menu.contact">Contact</a></li>
+                            <li><a href="index.html" class="selected" data-i18n="[html]menu.showcase">Showcase</a></li>
+                            <li><a href="blog.html" data-i18n="[html]menu.blog">Blog</a></li>
+                            <li><a href="about.html" data-i18n="[html]menu.about">About</a></li>
+                            <li><a href="contact.html" data-i18n="[html]menu.contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div><!-- .cd-half-block -->
@@ -36,10 +36,12 @@
                             <li><a href="mailto:cityboundforest@gmail.com">cityboundforest@gmail.com</a></li>
                         </ul>
                         <ul class="cd-contact-socials">
-                            <li><a href="https://instagram.com/cityboundforest" data-i18n="socials.instagram">Instagram</a></li>   
-                            <li><a href="https://twitter.com/cityboundforest" data-i18n="socials.twitter">Twitter</a></li>   
-                            <li><a href="https://facebook.com/cityboundforest" data-i18n="socials.facebook">Facebook</a></li>    
-                            <li><a href="https://www.youtube.com/channel/UCexbz2BYv_lMV1PP_Pdf7_g" data-i18n="socials.youtube">YouTube</a></li>
+                            <li><a href="https://instagram.com/cityboundforest" data-i18n="[html]socials.instagram">Instagram</a></li>   
+                            <li><a href="https://twitter.com/cityboundforest" data-i18n="[html]socials.twitter">Twitter</a></li>   
+                            <li><a href="https://facebook.com/cityboundforest" data-i18n="[html]socials.facebook">Facebook</a></li>    
+                            <li><a href="https://www.youtube.com/channel/UCexbz2BYv_lMV1PP_Pdf7_g" data-i18n="[html]socials.youtube">YouTube</a></li>
+                            <li><a href="https://tiktok.com/@cityboundforest" data-i18n="[html]socials.tiktok">TikTok</a></li>
+                            <li><a href="https://twitch.tv/cityboundforest" data-i18n="[html]socials.twitch">Twitch</a></li>
                         </ul>
                     </address>
                 </div> <!-- .cd-half-block -->
@@ -52,11 +54,11 @@
             </header><!-- / .site-header -->
             <section class="site-content">
                 <div class="page-desc">
-                    <h1 data-i18n="projects.title">Projects</h1>
-                    <p data-i18n="projects.skills.label">Skills:</p>
-                    <p data-i18n="projects.skills.list">Final Cut Pro X, Python, C#, Unity</p>
+                    <h1 data-i18n="[html]projects.title">Projects</h1>
+                    <p data-i18n="[html]projects.skills.label">Skills:</p>
+                    <p data-i18n="" id="skills-label"></p>
                 </div>
-                <article class="project project-page cf active-project" id="mememachine">
+                <article class="project project-page cf active-project" id="project-1">
                     <div class="thumb">
                         <div data-picture data-alt="">
                             <div data-src="img/mememachine.png"></div>
@@ -72,16 +74,15 @@
                         <div class="project-content">
                             <div class="table">
                                 <div class="table-cell">
-                                    <h2 class="thumbnail-title" data-i18n="project.mememachine.title">Meme Machine</h2>
-                                    <p data-i18n="project.mememachine.long-description.1">This was a project created by the University of the Pacific chapter of the Association for Computing Machinery in March of 2017 to create a set of software to download and aggregate memes from different social media sites to which memes are uploaded, rate them by some sort of combined metric made up of data from each of the different sites, and then use all of that data to then create its own memes. The project was discontinued roughly a month later.</p>
-                                    <p data-i18n="project.mememachine.long-description.2">The project uses primarily Python in its code, although one of us wanted to use Haskell to download memes from ImgFlip's meme generator. I looked a little at Haskell although I wouldn't say that I can explain line by line what the code does.</p>
-                                    <p><a href="https://github.com/uopacm/mememachinecollector" data-i18n="project.mememachine.link">GitHub Repository</a></p>
+                                    <h2 class="thumbnail-title" data-i18n="[html]project.mememachine.title">Meme Machine</h2>
+                                    <p data-i18n="[html]project.mememachine.long-description">This was a project created by the University of the Pacific chapter of the Association for Computing Machinery in March of 2017 to create a set of software to download and aggregate memes from different social media sites to which memes are uploaded, rate them by some sort of combined metric made up of data from each of the different sites, and then use all of that data to then create its own memes. The project was discontinued roughly a month later. <br />The project uses primarily Python in its code, although one of us wanted to use Haskell to download memes from ImgFlip's meme generator. I looked a little at Haskell although I wouldn't say that I can explain line by line what the code does.</p>
+                                    <p><a href="https://github.com/uopacm/mememachinecollector" data-i18n="[html]project.mememachine.link">GitHub Repository</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </article>
-                <article class="project project-page cf" id="shutin">
+                <article class="project project-page cf" id="project-2">
                     <div class="thumb">
                         <div data-picture data-alt="">
                             <div data-src="img/shutin.png"></div>
@@ -97,9 +98,8 @@
                         <div class="project-content">
                             <div class="table">
                                 <div class="table-cell">
-                                    <h2 class="thumbnail-title" data-i18n="project.shutin.title">Shut In</h2>
-                                    <p data-i18n="project.shutin.long-description.1">This was a short film created as part of the Go Film! Workshop held at the San Joaquin County Office of Education in June 2012. During the first of two weeks, we learned the fundamentals of creating a short film and then we pitched our projects and chose what would end up being the final product. The second week then comprised of pre-production, filming over the course of a full day on-location at a daycare in Manteca, CA, and then finishing up post-production until late into the night.</p>
-                                    <p data-i18n="project.shutin.long-description.2">The film was then premiered at the Lincoln High School theatre to a packed house after which the crew got up on stage and held a short Q+A session with the audience. As far as I'm aware (as I was not told about this and found out through social media), the short film was also entered into a short film contest in which it won an award.</p>
+                                    <h2 class="thumbnail-title" data-i18n="[html]project.shutin.title">Shut In</h2>
+                                    <p data-i18n="[html]project.shutin.long-description">This was a short film created as part of the Go Film! Workshop held at the San Joaquin County Office of Education in June 2012. During the first of two weeks, we learned the fundamentals of creating a short film and then we pitched our projects and chose what would end up being the final product. The second week then comprised of pre-production, filming over the course of a full day on-location at a daycare in Manteca, CA, and then finishing up post-production until late into the night.<br />The film was then premiered at the Lincoln High School theatre to a packed house after which the crew got up on stage and held a short Q+A session with the audience. As far as I'm aware (as I was not told about this and found out through social media), the short film was also entered into a short film contest in which it won an award.</p>
                                     <div class="embed embed-16by9">
                                         <iframe src="https://www.youtube.com/embed/1g2i2bYbwC8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-item">Your device does not support iframes.</iframe>
                                     </div>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="project project-page cf" id="bulletrush">
+                <article class="project project-page cf" id="project-3">
                     <div class="thumb">
                         <div data-picture data-alt="">
                             <div data-src="img/bullet-rush.png"></div>
@@ -124,16 +124,15 @@
                         <div class="project-content">
                             <div class="table">
                                 <div class="table-cell">
-                                    <h2 class="thumbnail-title" data-i18n="project.bulletrush.title">Bullet Rush</h2>
-                                    <p data-i18n="project.bulletrush.long-description.1">During the Fall 2019 semester, I took the Computer Game Technologies course at University of the Pacific where I learned both Video Game Design and Development. We were to pitch ideas to the class and then everyone voted on which projects they wanted to work on and what roles they had desired. Since I had already worked as a Project Manager on my Application Development team (even though I was never officially designated as such), I chose that role. I was assigned to the Bullet Rush team and oversaw the development of the game.</p>
-                                    <p data-i18n="project.bulletrush.long-description.2">We were a small team of four working on this project with a Lead Programmer, a generic Programmer, and a Media Director also assigned to the project. Our final for the class consisted of our project showcase where our classmates (and anyone else we had invited) could play our games and give us feedback.</p>
-                                    <p><a href="https://bitbucket.org/jacob5567/bullet-rush" data-i18n="project.bulletrush.link">Bitbucket Repository</a></p>
+                                    <h2 class="thumbnail-title" data-i18n="[html]project.bulletrush.title">Bullet Rush</h2>
+                                    <p data-i18n="[html]project.bulletrush.long-description">During the Fall 2019 semester, I took the Computer Game Technologies course at University of the Pacific where I learned both Video Game Design and Development. We were to pitch ideas to the class and then everyone voted on which projects they wanted to work on and what roles they had desired. Since I had already worked as a Project Manager on my Application Development team (even though I was never officially designated as such), I chose that role. I was assigned to the Bullet Rush team and oversaw the development of the game.<br />We were a small team of four working on this project with a Lead Programmer, a generic Programmer, and a Media Director also assigned to the project. Our final for the class consisted of our project showcase where our classmates (and anyone else we had invited) could play our games and give us feedback.</p>
+                                    <p><a href="https://bitbucket.org/jacob5567/bullet-rush" data-i18n="[html]project.bulletrush.link">Bitbucket Repository</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </article>
-                <article class="project project-page cf" id="dndcombatsim">
+                <article class="project project-page cf" id="project-4">
                     <div class="thumb">
                         <div data-picture data-alt="">
                             <div data-src="img/dndcombatsim.png"></div>
@@ -149,16 +148,15 @@
                         <div class="project-content">
                             <div class="table">
                                 <div class="table-cell">
-                                    <h2 class="thumbnail-title" data-i18n="project.dndcombatsim.title">Dungeons and Dragons Combat Simulator</h2>
-                                    <p data-i18n="project.dndcombatsim.long-description.1">During the Fall 2018 semester, I took the Application Development course at University of the Pacific where I learned the joys and perils of working on a team to develop some piece of software. We were assigned into groups and told to come up with a project proposal for the final project of the class. Next came writing up system requirements documents and having team meetings each week (usually) to discuss and work on the program. Unlike the Bullet Rush project that I was later part of the next year, we didn't have specific roles; we mostly just chose them in amongst our teams. I saw the position of team leader/project manager unfilled and I rose to fill it.</p>
-                                    <p data-i18n="project.dndcombatsim.long-description.2">The program takes information from the website 5e.tools in the form of a JSON lookup table and spawns in monster information along with weapon information and a bit of randomness to make the combat simulator work. In the programming field, I mostly worked on sorting through all of the JSON data to make it contain only the data we needed for the project. I also worked to implement the JSON data into the program along with other general backend programming.</p>
-                                    <p data-i18n="project.dndcombatsim.link">Because we used data from 5e.tools, I am not including a link to the repository here.</p>
+                                    <h2 class="thumbnail-title" data-i18n="[html]project.dndcombatsim.title">Dungeons and Dragons Combat Simulator</h2>
+                                    <p data-i18n="[html]project.dndcombatsim.long-description">During the Fall 2018 semester, I took the Application Development course at University of the Pacific where I learned the joys and perils of working on a team to develop some piece of software. We were assigned into groups and told to come up with a project proposal for the final project of the class. Next came writing up system requirements documents and having team meetings each week (usually) to discuss and work on the program. Unlike the Bullet Rush project that I was later part of the next year, we didn't have specific roles; we mostly just chose them in amongst our teams. I saw the position of team leader/project manager unfilled and I rose to fill it.<br />The program takes information from the website 5e.tools in the form of a JSON lookup table and spawns in monster information along with weapon information and a bit of randomness to make the combat simulator work. In the programming field, I mostly worked on sorting through all of the JSON data to make it contain only the data we needed for the project. I also worked to implement the JSON data into the program along with other general backend programming.</p>
+                                    <p data-i18n="[html]project.dndcombatsim.link">Because we used data from 5e.tools, I am not including a link to the repository here.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </article>
-                <article class="project project-page cf" id="cansat">
+                <article class="project project-page cf" id="project-5">
                     <div class="thumb">
                         <div data-picture data-alt="">
                             <div data-src="img/cansat.png"></div>
@@ -174,10 +172,9 @@
                         <div class="project-content">
                             <div class="table">
                                 <div class="table-cell">
-                                    <h2 class="thumbnail-title" data-i18n="project.cansat.title">CanSat</h2>
-                                    <p data-i18n="project.cansat.long-description.1">When I was in my third year of high school, my dad (who taught at my high school) offered me and a couple of his Computer Science students an offer to work on an after school project involving a simulated sattelite in the shape and size of a soda can run by an Arduino. I had messed around with an Arduino a little bit and had taken the Digital Design course at San Joaquin Delta College (which was likely called something else, but Digital Design is the equivalent course at University of the Pacific) so I knew a little bit about the skills the project would require. Eventually, we were connected with Ted Tagami of Magnitude.io with the project and eventually he took the project and pushed it into schools.</p>
-                                    <p data-i18n="project.cansat.long-description.2">I ended up taking an internship with Magnitude to help them give out CanSats and their other program known as the ExoLab to teachers and students in my local area. However, when I was in my last year of high school, I was part of adapting the CanSat project into a larger project that would go up into low-Earth orbit. That project consisted of working both with Magnitudio.io engineers and with students at the University of Pacific School of Engineering and Computer Science under Dr. Elizabeth Basha. The CanSat was eventually launched into low-Earth orbit in November 2019.</p>
-                                    <a href="https://magnitude.io/cansat-stem-education/" data-i18n="project.cansat.link">More Information</a>
+                                    <h2 class="thumbnail-title" data-i18n="[html]project.cansat.title">CanSat</h2>
+                                    <p data-i18n="[html]project.cansat.long-description">When I was in my third year of high school, my dad (who taught at my high school) offered me and a couple of his Computer Science students an offer to work on an after school project involving a simulated sattelite in the shape and size of a soda can run by an Arduino. I had messed around with an Arduino a little bit and had taken the Digital Design course at San Joaquin Delta College (which was likely called something else, but Digital Design is the equivalent course at University of the Pacific) so I knew a little bit about the skills the project would require. Eventually, we were connected with Ted Tagami of Magnitude.io with the project and eventually he took the project and pushed it into schools.<br />I ended up taking an internship with Magnitude to help them give out CanSats and their other program known as the ExoLab to teachers and students in my local area. However, when I was in my last year of high school, I was part of adapting the CanSat project into a larger project that would go up into low-Earth orbit. That project consisted of working both with Magnitudio.io engineers and with students at the University of Pacific School of Engineering and Computer Science under Dr. Elizabeth Basha. The CanSat was eventually launched into low-Earth orbit in November 2019.</p>
+                                    <a href="https://magnitude.io/cansat-stem-education/" data-i18n="[html]project.cansat.link">More Information</a>
                                 </div>
                             </div>
                         </div>
@@ -187,13 +184,13 @@
             </section>
             <nav role="navigation">
                 <ul class="cd-pagination animated-buttons custom-icons">
-                    <li class="button"><a href="#"><i data-i18n="nav.previous">Prev</i></a></li>
-                    <li class="button-main"><a href="index.html"><i data-i18n="nav.portfolio">Portfolio</i></a></li>
-                    <li class="button"><a href="#"><i data-i18n="nav.next">Next</i></a></li>
+                    <li class="button"><a href="#"><i data-i18n="[html]nav.previous">Prev</i></a></li>
+                    <li class="button-main"><a href="index.html"><i data-i18n="[html]nav.portfolio">Portfolio</i></a></li>
+                    <li class="button"><a href="#"><i data-i18n="[html]nav.next">Next</i></a></li>
                 </ul>
             </nav> <!-- cd-pagination-wrapper -->
             <footer class="site-footer cf">
-                <p class="footer-text" data-i18n="footer.copyright">© Copyright Cass Unterholzner 2020. </p>
+                <p class="footer-text" data-i18n="[html]footer.copyright">© Copyright Cass Unterholzner 2020. </p>
                 <nav class="languages" role="navigation">
                     <ul>
                         <li class="active lang-switch-parent"><a href="#" class="lang-switch" data-locale="en">EN</a> |</li>
@@ -214,6 +211,8 @@
         <script src="scripts/jquery_i18n/jquery.i18n.parser.js"></script>
         <script src="scripts/jquery_i18n/jquery.i18n.emitter.js"></script>
         <script src="scripts/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+        <script src="scripts/showdown.min.js"></script>
+        <script src="scripts/lang.js"></script>
         <script src="scripts/project-main.js"></script>
     </body>
 </html>
