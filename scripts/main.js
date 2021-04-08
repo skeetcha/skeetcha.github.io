@@ -28,10 +28,11 @@ jQuery(document).ready(function($){
 
             var converter = new showdown.Converter();
             var convertedMsg = converter.makeHtml(newmsg).replace('<p>', '<div>').replace('</p>', '</div>');
+            var colors = ['#00eeff', '#fffb00', '#ff3e3e', '#ff70e7'];
 
-            return message.replace(/\$(\d+)\[[*A-Za-z0-9 ]+\]/gm, function(str, match) {
-                var color = parseint(match, 10);
-                // apply color to text
+            return convertedMsg.replaceAll(/!(\d)+\[([*A-Za-z0-9 <>/]+)\]/gm, function(str, numMatch, innerText) {
+                var num = parseInt(numMatch, 10) - 1;
+                return '<span style="color:' + colors[num] + ';">' + innerText + '</span>';
             });
         },
         emitter: {}

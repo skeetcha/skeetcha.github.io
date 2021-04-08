@@ -3,6 +3,8 @@ var language_data = {"en": {
     "socials.twitter": "Twitter",
     "socials.facebook": "Facebook",
     "socials.youtube": "YouTube",
+    "socials.tiktok": "TikTok",
+    "socials.twitch": "Twitch",
 
     "menu.showcase": "Showcase",
     "menu.blog": "Blog",
@@ -11,7 +13,7 @@ var language_data = {"en": {
     "menu.contact": "Contact",
 
     "title": "CityboundForest",
-    "title.message": "Hello I'm **Cass Unterholzner.**  \nI'm a storyteller working in the media of $1[**film**], $2[**theatre**], $3[**video games**], and $4[**music**].",
+    "title.message": "Hello I'm **Cass Unterholzner.**  \nI'm a storyteller working in the media of !1[**film**], !2[**theatre**], !3[**video games**], and !4[**music**].",
 
     "footer.copyright": "© Copyright Cass Unterholzner 2020.",
 
