@@ -1,64 +1,51 @@
 var update_texts = function() { $('body').i18n(); };
 var get_lang_code = function(el) { return el.attributes["data-locale"].value; };
+var projectNames = ['mememachine', 'shutin', 'bulletrush', 'dndcombatsim', 'cansat']
 
-function update_portfolio_buttons(projectName) {
-    if (projectName === 'mememachine') {
-        $('.button:first-of-type a').click(function(e) {
-            e.preventDefault();
-            console.log('test');
-            window.location = 'portfolio-item.html#mememachine';
-        });
+function previousProject(event) {
+    event.preventDefault();
+    var projectName = window.location.hash.substr(1);
+    var anonName = 'project-' + (projectNames.indexOf(projectName) + 1).toString();
+    var lastAnonName = 'project-' + projectNames.indexOf(projectName).toString();
 
-        $('.button:last-of-type a').click(function(e) {
-            e.preventDefault();
-            window.location = 'portfolio-item.html#shutin';
-            window.location.reload();
+    if (projectNames.indexOf(projectName) == 0) {
+        window.location = 'portfolio-item.html#' + projectName;
+        $('html, body').animate({scrollTop: 0}, 250);
+    } else {
+        var newProjectName = projectNames[projectNames.indexOf(projectName) - 1];
+        window.location = 'portfolio-item.html#' + newProjectName;
+        $('html, body').animate({scrollTop: 0}, {duration: 250, queue: false});
+        $('#' + anonName).animate({opacity: 0}, 125, function() {
+            $('#' + anonName).removeClass('active-project');
+            $('#skills-label').data('i18n', '[html]project.' + newProjectName + '.skills');
+            $('#skills-label').i18n();
+            $('#' + lastAnonName).animate({opacity: 1}, 125, function() {
+                $('#' + lastAnonName).addClass('active-project');
+            });
         });
-    } else if (projectName === 'shutin') {
-        $('.button:first-of-type a').click(function(e) {
-            e.preventDefault();
-            window.location = 'portfolio-item.html#mememachine';
-            window.location.reload();
-        });
+    }
+}
 
-        $('.button:last-of-type a').click(function(e) {
-            e.preventDefault();
-            window.location = 'portfolio-item.html#bulletrush';
-            window.location.reload();
-        });
-    } else if (projectName === 'bulletrush') {
-        $('.button:first-of-type a').click(function(e) {
-            e.preventDefault();
-            window.location = 'portfolio-item.html#shutin';
-            window.location.reload();
-        });
+function nextProject(event) {
+    event.preventDefault();
+    var projectName = window.location.hash.substr(1);
+    var anonName = 'project-' + (projectNames.indexOf(projectName) + 1).toString();
+    var nextAnonName = 'project-' + (projectNames.indexOf(projectName) + 2).toString();
 
-        $('.button:last-of-type a').click(function(e) {
-            e.preventDefault();
-            window.location = 'portfolio-item.html#dndcombatsim';
-            window.location.reload();
-        });
-    } else if (projectName === 'dndcombatsim') {
-        $('.button:first-of-type a').click(function(e) {
-            e.preventDefault();
-            window.location = 'portfolio-item.html#bulletrush';
-            window.location.reload();
-        });
-
-        $('.button:last-of-type a').click(function(e) {
-            e.preventDefault();
-            window.location = 'portfolio-item.html#cansat';
-            window.location.reload();
-        });
-    } else if (projectName === 'cansat') {
-        $('.button:first-of-type a').click(function(e) {
-            e.preventDefault();
-            window.location = 'portfolio-item.html#dndcombatsim';
-            window.location.reload();
-        });
-
-        $('.button:last-of-type a').click(function(e) {
-            e.preventDefault();
+    if (projectNames.indexOf(projectName) == (projectNames.length - 1)) {
+        window.location = 'portfolio-item.html#' + projectName;
+        $('html, body').animate({scrollTop: 0}, 250);
+    } else {
+        var newProjectName = projectNames[projectNames.indexOf(projectName) + 1];
+        window.location = 'portfolio-item.html#' + newProjectName;
+        $('html, body').animate({scrollTop: 0}, {duration: 250, queue: false});
+        $('#' + anonName).animate({opacity: 0}, 125, function() {
+            $('#' + anonName).removeClass('active-project');
+            $('#skills-label').data('i18n', '[html]project.' + newProjectName + '.skills');
+            $('#skills-label').i18n();
+            $('#' + nextAnonName).animate({opacity: 1}, 125, function() {
+                $('#' + nextAnonName).addClass('active-project');
+            });
         });
     }
 }
@@ -81,14 +68,15 @@ jQuery(document).ready(function($){
 		}
     });
 
-    var projectName = 'project-' + (['mememachine', 'shutin', 'bulletrush', 'dndcombatsim', 'cansat'].indexOf(window.location.hash.substr(1)) + 1).toString();
+    var projectName = 'project-' + (projectNames.indexOf(window.location.hash.substr(1)) + 1).toString();
     
     if (!($('#' + projectName).hasClass('active-project'))) {
         $('.active-project').removeClass('active-project');
         $('#' + projectName).addClass('active-project');
     }
 
-    update_portfolio_buttons(window.location.hash.substr(1));
+    $('.button:first-of-type a').click(previousProject);
+    $('.button:last-of-type a').click(nextProject);
 
     $.i18n().parser = {
         parse: function(message, parameters) {
@@ -110,7 +98,7 @@ jQuery(document).ready(function($){
     };
 
     $.i18n().load(language_data);
-    document.getElementById('skills-label').dataset.i18n = '[html]project.' + window.location.hash.substr(1) + '.skills';
+    $('#skills-label').data('i18n', '[html]project.' + window.location.hash.substr(1) + '.skills');
 
     if (localStorage.getItem('locale') !== null) {
         $.i18n().locale = localStorage.getItem('locale');
