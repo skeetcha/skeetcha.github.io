@@ -23,10 +23,10 @@
                 <div class="cd-half-block">
                     <nav>
                         <ul class="cd-primary-nav">
-                            <li><a href="index.html" data-i18n="menu.showcase">Showcase</a></li>
-                            <li><a href="blog.html"class="selected" data-i18n="menu.blog">Blog</a></li>
-                            <li><a href="about.html" data-i18n="menu.about">About</a></li>
-                            <li><a href="contact.html" data-i18n="menu.contact">Contact</a></li>
+                            <li><a href="index.html" data-i18n="[html]menu.showcase">Showcase</a></li>
+                            <li><a href="blog.html"class="selected" data-i18n="[html]menu.blog">Blog</a></li>
+                            <li><a href="about.html" data-i18n="[html]menu.about">About</a></li>
+                            <li><a href="contact.html" data-i18n="[html]menu.contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div><!-- .cd-half-block -->
@@ -36,10 +36,12 @@
                             <li><a href="mailto:cityboundforest@gmail.com">cityboundforest@gmail.com</a></li>
                         </ul>
                         <ul class="cd-contact-socials">
-                            <li><a href="https://instagram.com/cityboundforest" data-i18n="socials.instagram">Instagram</a></li>   
-                            <li><a href="https://twitter.com/cityboundforest" data-i18n="socials.twitter">Twitter</a></li>   
-                            <li><a href="https://facebook.com/cityboundforest" data-i18n="socials.facebook">Facebook</a></li>    
-                            <li><a href="https://www.youtube.com/channel/UCexbz2BYv_lMV1PP_Pdf7_g" data-i18n="socials.youtube">YouTube</a></li>
+                            <li><a href="https://instagram.com/cityboundforest" data-i18n="[html]socials.instagram">Instagram</a></li>   
+                            <li><a href="https://twitter.com/cityboundforest" data-i18n="[html]socials.twitter">Twitter</a></li>   
+                            <li><a href="https://facebook.com/cityboundforest" data-i18n="[html]socials.facebook">Facebook</a></li>    
+                            <li><a href="https://www.youtube.com/channel/UCexbz2BYv_lMV1PP_Pdf7_g" data-i18n="[html]socials.youtube">YouTube</a></li>
+                            <li><a href="https://tiktok.com/@cityboundforest" data-i18n="[html]socials.tiktok">TikTok</a></li>
+                            <li><a href="https://twitch.tv/cityboundforest" data-i18n="[html]socials.twitch">Twitch</a></li>
                         </ul>
                     </address>
                 </div> <!-- .cd-half-block -->
@@ -52,8 +54,8 @@
             </header><!-- / .site-header -->
             <section class="site-content">
                 <div class="page-desc">
-                    <h4 data-i18n="blog.title">Personal Blog</h4>
-                    <p data-i18n="blog.description">Random postings, news, and other thoughts</p>
+                    <h4 data-i18n="[html]blog.title">Personal Blog</h4>
+                    <p data-i18n="[html]blog.description">Random postings, news, and other thoughts coming soon!</p>
                 </div>
                 <article class="news active-news-page" data-page="1">
                     <!--<div class="blog_item full grey_bg ">
@@ -69,19 +71,19 @@
             </section>
             <nav role="navigation">
                 <ul class="cd-pagination animated-buttons custom-icons">
-                    <!--<li class="button"><a href="#"><i data-i18n="nav.previous">Prev</i></a></li>-->
-                    <li><a class="current page-button" href="#" data-i18n="nav.page.1" data-page="1">1</a></li>
+                    <!--<li class="button"><a href="#"><i data-i18n="[html]nav.previous">Prev</i></a></li>-->
+                    <li><a class="current page-button" href="#" data-i18n="[html]nav.page.1" data-page="1">1</a></li>
                     <!--<li><span id="left-elipses">...</span></li>
-                    <li><a href="#" class="page-button" data-i18n="nav.page.2" data-page="2">2</a></li>
-                    <li><a href="#" class="page-button" data-i18n="nav.page.3" data-page="3">3</a></li>
-                    <li><a href="#" class="page-button" data-i18n="nav.page.4" data-page="4">4</a></li>
+                    <li><a href="#" class="page-button" data-i18n="[html]nav.page.2" data-page="2">2</a></li>
+                    <li><a href="#" class="page-button" data-i18n="[html]nav.page.3" data-page="3">3</a></li>
+                    <li><a href="#" class="page-button" data-i18n="[html]nav.page.4" data-page="4">4</a></li>
                     <li><span id="right-elipses">...</span></li>
-                    <li><a href="#" class="page-button" data-i18n="nav.page.20" data-page="20">20</a></li>
-                    <li class="button"><a href="#"><i data-i18n="nav.next">Next</i></a></li>-->
+                    <li><a href="#" class="page-button" data-i18n="[html]nav.page.20" data-page="20">20</a></li>
+                    <li class="button"><a href="#"><i data-i18n="[html]nav.next">Next</i></a></li>-->
                 </ul>
             </nav> <!-- cd-pagination-wrapper -->
             <footer class="site-footer cf">
-                <p class="footer-text" data-i18n="footer.copyright">© Copyright Cass Unterholzner 2020. </p>
+                <p class="footer-text" data-i18n="[html]footer.copyright">© Copyright Cass Unterholzner 2020. </p>
                 <nav class="languages" role="navigation">
                     <ul>
                         <li class="active lang-switch-parent"><a href="#" class="lang-switch" data-locale="en">EN</a> |</li>
@@ -102,6 +104,8 @@
         <script src="scripts/jquery_i18n/jquery.i18n.parser.js"></script>
         <script src="scripts/jquery_i18n/jquery.i18n.emitter.js"></script>
         <script src="scripts/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+        <script src="scripts/showdown.min.js"></script>
+        <script src="scripts/lang.js"></script>
         <script src="scripts/blog-main.js"></script>
     </body>
 </html>
