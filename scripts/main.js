@@ -27,7 +27,7 @@ jQuery(document).ready(function($){
             });
 
             var converter = new showdown.Converter();
-            var convertedMsg = converter.makeHtml(newmsg).replace('<p>', '<div>').replace('</p>', '</div>');
+            var convertedMsg = converter.makeHtml(newmsg).replaceAll('<p>', '<div>').replaceAll('</p>', '</div>');
             var colors = ['#00eeff', '#fffb00', '#ff3e3e', '#ff70e7'];
 
             return convertedMsg.replaceAll(/!(\d)+\[([*A-Za-z0-9 <>/]+)\]/gm, function(str, numMatch, innerText) {

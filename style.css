@@ -1474,3 +1474,8 @@ textarea {
 li.button-submit {
     display: inline-block;
 }
+
+p[data-i18n="[html]about.bio"] div::after, p[data-i18n="[html]about.bio"] p::after {
+    content: "\a\a";
+    white-space: pre;
+}
