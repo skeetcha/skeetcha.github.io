@@ -1,8 +1,6 @@
 var update_texts = function() { $('body').i18n(); };
 var get_lang_code = function(el) { return el.attributes["data-locale"].value; };
 
-var posts = {};
-
 var converter = new showdown.Converter();
 
 jQuery(document).ready(function($){
