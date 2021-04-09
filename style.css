@@ -602,7 +602,8 @@ pre {
     text-align: left;
     letter-spacing: 4px;
     text-transform:uppercase;
-    max-width: 360px;
+    max-width: 700px;
+    text-align: center;
     width: 75%;
     word-wrap: break-word;
 }
