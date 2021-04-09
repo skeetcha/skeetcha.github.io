@@ -23,10 +23,10 @@
                 <div class="cd-half-block">
                     <nav>
                         <ul class="cd-primary-nav">
-                            <li><a href="index.html" data-i18n="menu.showcase">Showcase</a></li>
-                            <li><a href="blog.html" data-i18n="menu.blog">Blog</a></li>
-                            <li><a href="about.html" data-i18n="menu.about">About</a></li>
-                            <li><a href="contact.html" class="selected" data-i18n="menu.contact">Contact</a></li>
+                            <li><a href="index.html" data-i18n="[html]menu.showcase">Showcase</a></li>
+                            <li><a href="blog.html" data-i18n="[html]menu.blog">Blog</a></li>
+                            <li><a href="about.html" data-i18n="[html]menu.about">About</a></li>
+                            <li><a href="contact.html" class="selected" data-i18n="[html]menu.contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div><!-- .cd-half-block -->
@@ -36,10 +36,12 @@
                             <li><a href="mailto:cityboundforest@gmail.com">cityboundforest@gmail.com</a></li>
                         </ul>
                         <ul class="cd-contact-socials">
-                            <li><a href="https://instagram.com/cityboundforest" data-i18n="socials.instagram">Instagram</a></li>   
-                            <li><a href="https://twitter.com/cityboundforest" data-i18n="socials.twitter">Twitter</a></li>   
-                            <li><a href="https://facebook.com/cityboundforest" data-i18n="socials.facebook">Facebook</a></li>
-                            <li><a href="https://www.youtube.com/channel/UCexbz2BYv_lMV1PP_Pdf7_g" data-i18n="socials.youtube">YouTube</a></li>
+                            <li><a href="https://instagram.com/cityboundforest" data-i18n="[html]socials.instagram">Instagram</a></li>   
+                            <li><a href="https://twitter.com/cityboundforest" data-i18n="[html]socials.twitter">Twitter</a></li>   
+                            <li><a href="https://facebook.com/cityboundforest" data-i18n="[html]socials.facebook">Facebook</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCexbz2BYv_lMV1PP_Pdf7_g" data-i18n="[html]socials.youtube">YouTube</a></li>
+                            <li><a href="https://tiktok.com/@cityboundforest" data-i18n="[html]socials.tiktok">TikTok</a></li>
+                            <li><a href="https://twitch.tv/cityboundforest" data-i18n="[html]socials.twitch">Twitch</a></li>
                         </ul>
                     </address>
                 </div> <!-- .cd-half-block -->
@@ -50,7 +52,7 @@
                 <div class="site-title"><a href="index.html">C/B/F</a></div>
                 <div class="cf"></div>
                 <div class="site-tagline">
-                    <h1 id="blog-post-title" data-i18n="contact.title">Contact Me</h1>
+                    <h1 id="blog-post-title" data-i18n="[html]contact.title">Contact Me</h1>
                 </div>
             </header><!-- / .site-header -->
             <section class="site-content">
@@ -58,12 +60,12 @@
                 <div class="input"><input type="email" required placeholder="Email *" name="email" id="contact-email" /></div>
                 <div class="input"><textarea name="message" id="contact-message" placeholder="Message *"></textarea></div>
                 <ul class="cd-pagination custom-icons">
-                    <li class="button-submit"><a href="#"><i data-i18n="contact.submit">Submit</i></a></li>
+                    <li class="button-submit"><a href="#"><i data-i18n="[html]contact.submit">Submit</i></a></li>
                 </ul>
                 <!--END .site-content-->
             </section>
             <footer class="site-footer cf">
-                <p class="footer-text" data-i18n="footer.copyright">© Copyright Cass Unterholzner 2020. </p>
+                <p class="footer-text" data-i18n="[html]footer.copyright">© Copyright Cass Unterholzner 2020. </p>
                 <nav class="languages" role="navigation">
                     <ul>
                         <li class="active lang-switch-parent"><a href="#" class="lang-switch" data-locale="en">EN</a> |</li>
@@ -85,6 +87,8 @@
         <script src="scripts/jquery_i18n/jquery.i18n.emitter.js"></script>
         <script src="scripts/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="scripts/showdown.min.js"></script>
+        <script src="scripts/lang.js"></script>
         <script src="scripts/contact-main.js"></script>
     </body>
 </html>
