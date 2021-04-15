@@ -1,6 +1,6 @@
 var update_texts = function() { $('body').i18n(); };
 var get_lang_code = function(el) { return el.attributes["data-locale"].value; };
-var projectNames = ['mememachine', 'shutin', 'bulletrush', 'dndcombatsim', 'cansat']
+var projectNames = ['fourwoods', 'mememachine', 'shutin', 'bulletrush', 'dndcombatsim', 'cansat'];
 
 function previousProject(event) {
     event.preventDefault();
