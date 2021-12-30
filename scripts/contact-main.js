@@ -1,4 +1,10 @@
-var update_texts = function() { $('body').i18n(); };
+var update_texts = function() {
+    $('body').i18n();
+    $('input[name="name"]').prop('placeholder', $.i18n().localize('contact.placeholder.name'));
+    $('input[name="email"]').prop('placeholder', $.i18n().localize('contact.placeholder.email'));
+    $('textarea[name="message"]').prop('placeholder', $.i18n().localize('contact.placeholder.message'));
+};
+
 var get_lang_code = function(el) { return el.attributes["data-locale"].value; };
 var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
