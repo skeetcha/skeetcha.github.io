@@ -1,4 +1,9 @@
-var update_texts = function() { $('body').i18n(); };
+var update_texts = function() {
+    $('body').i18n();
+    $('#blog-post-title').text($('#blog-post-title').text().replace('<div>', '').replace('</div>', ''));
+    $('#blog-post-author').text($('#blog-post-author').text().replace('<div>', '').replace('</div>', ''));
+    $('#blog-post-date').text($('#blog-post-date').text().replace('<div>', '').replace('</div>', ''));
+};
 var get_lang_code = function(el) { return el.attributes["data-locale"].value; };
 
 var converter = new showdown.Converter();
@@ -73,6 +78,7 @@ jQuery(document).ready(function($){
     }
 
     update_texts();
+    $(document).find("title").text('C/B/F - ' + $.i18n(postData.title).replace('<div>', '').replace('</div>', ''));
 
     $('.lang-switch').click(function(e) {
         e.preventDefault();
