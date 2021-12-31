@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>CityboundForest's Blog</title>
+        <link>https://skeetcha.github.io/blog.html</link>
+        <description>The blog posts from CityboundForest's website.</description>
+        <language>en-us</language>
+        <item>
+            <title>Updates!</title>
+            <link>https://skeetcha.github.io/blog-item.html#updates</link>
+            <guid>updates</guid>
+            <pubDate>Sun, 02 Jan 2022 13:00:00 PST</pubDate>
+            <description>A small little update on what I'm planning on doing in the coming year.</description>
+        </item>
+    </channel>
+</rss>
