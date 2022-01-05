@@ -77,6 +77,12 @@ var language_data = {
         "nav.page.4": "Page 4",
         "nav.page.20": "Page 20",
 
+        "blog.post.minecraft_stream.title": "Minecraft Stream on Saturday!",
+        "blog.post.minecraft_stream.author": "Cass Forest",
+        "blog.post.minecraft_stream.date": "2022 January 5",
+        "blog.post.minecraft_stream.content": "Hey everyone! This is just a reminder that I'll be streaming this Saturday at 1:00 pm PST on my [Twitch Channel](https://twitch.tv/cityboundforest) playing Minecraft with my friend KniightRyder. Hope to see you there!\n\nMake sure you follow me on Twitch to get notifications for when I go live!",
+        "blog.post.minecraft_stream.description": "Just a reminder of my upcoming Minecraft stream on Saturday.",
+        
         "blog.post.updates.title": "Updates!",
         "blog.post.updates.author": "Cass Forest",
         "blog.post.updates.date": "2022 January 02",
