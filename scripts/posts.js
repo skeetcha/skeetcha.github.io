@@ -10,5 +10,11 @@ var posts = {
         date: 'blog.post.minecraft_stream.date',
         author: 'blog.post.minecraft_stream.author',
         content: 'blog.post.minecraft_stream.content'
+    },
+    streamschedule_updates: {
+        title: 'blog.post.streamschedule_updates.title',
+        date: 'blog.post.streamschedule_updates.date',
+        author: 'blog.post.streamschedule_updates.author',
+        content: 'blog.post.streamschedule_updates.content'
     }
 };

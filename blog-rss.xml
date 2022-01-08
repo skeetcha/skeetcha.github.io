@@ -6,6 +6,13 @@
         <description>The blog posts from CityboundForest's website.</description>
         <language>en-us</language>
         <item>
+            <title>Stream Schedule and Updates!</title>
+            <link>https://skeetcha.github.io/blog-item.html#streamschedule_updates</link>
+            <guid>streamschedule_update</guid>
+            <pubDate>Sun, 09 Jan 2022 13:00:00 PST</pubDate>
+            <description>A new stream schedule and some updates about my creative content.</description>
+        </item>
+        <item>
             <title>Minecraft Stream on Saturday!</title>
             <link>https://skeetcha.github.io/blog-item.html#minecraft_stream</link>
             <guid>minecraft_stream</guid>
