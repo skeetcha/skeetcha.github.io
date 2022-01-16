@@ -16,5 +16,11 @@ var posts = {
         date: 'blog.post.streamschedule_updates.date',
         author: 'blog.post.streamschedule_updates.author',
         content: 'blog.post.streamschedule_updates.content'
+    },
+    secondstreamschedule: {
+        title: 'blog.post.secondstreamschedule.title',
+        date: 'blog.post.secondstreamschedule.date',
+        author: 'blog.post.secondstreamschedule.author',
+        content: 'blog.post.secondstreamschedule.content'
     }
 };
