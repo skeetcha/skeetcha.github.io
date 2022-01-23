@@ -22,5 +22,11 @@ var posts = {
         date: 'blog.post.secondstreamschedule.date',
         author: 'blog.post.secondstreamschedule.author',
         content: 'blog.post.secondstreamschedule.content'
+    },
+    thirdstreamschedule: {
+        title: 'blog.post.thirdstreamschedule.title',
+        date: 'blog.post.thirdstreamschedule.date',
+        author: 'blog.post.thirdstreamschedule.author',
+        content: 'blog.post.thirdstreamschedule.content'
     }
 };
