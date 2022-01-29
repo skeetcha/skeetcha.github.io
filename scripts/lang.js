@@ -77,6 +77,12 @@ var language_data = {
         "nav.page.4": "Page 4",
         "nav.page.20": "Page 20",
 
+        "blog.post.fourthstreamschedule.title": "Stream Schedule for this week",
+        "blog.post.fourthstreamschedule.author": "Cass Forest",
+        "blog.post.fourthstreamschedule.date": "2022 January 30",
+        "blog.post.fourthstreamschedule.content": "Hey everyone! Here's a new stream schedule for this week. I'm going to keep publishing my stream schedules here as I make them but I still want to do more with this blog. If you have any ideas, let me know down below in the comments. Anyway, onto the stream schedule!\n\n![Stream schedule for January 31-Feburary 5. All streams are at 1:00 pm PST. Monday's stream is Pokemon GenLocke Part 1: FireRed with a re-run at 11:20 am PST. Wednesday's stream is Majora's Mask with a re-run at 10:55 am PST. Thursday's stream is Fire Emblem: Three Houses with a re-run at 10:50 am PST. Friday's stream is Octopath Traveler with a re-run at 11:05 am PST. Saturday's stream is Minecraft with my friend KniightRyder with a re-run at 10:50 am PST.](https://imgur.com/et1MeD7.png)\n\nThat's all from me in this post, see you over on Twitch!",
+        "blog.post.fourthstreamschedule.description": "This week's stream schedule (January 31 - February 5, 2022)",
+
         "blog.post.thirdstreamschedule.title": "Another New Stream Schedule!",
         "blog.post.thirdstreamschedule.author": "Cass Forest",
         "blog.post.thirdstreamschedule.date": "2022 January 23",
