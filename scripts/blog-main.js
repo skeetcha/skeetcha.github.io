@@ -1,7 +1,11 @@
 var update_texts = function() { $('body').i18n(); };
 var get_lang_code = function(el) { return el.attributes["data-locale"].value; };
-var get_page = function(el) { return el.attributes["data-page"].value; };
+var get_page = function(el) {
+    //console.log(el);
+    return el.attributes["data-page"].value;
+};
 var currentPage = 1;
+var numPages = 1;
 
 jQuery(document).ready(function($){
 	var isLateralNavAnimating = false;
@@ -31,8 +35,16 @@ jQuery(document).ready(function($){
     for (var i = 0; i < pages.length; i++) {
         if ((get_page(pages[i]) === pageNumber) && (!pages[i].classList.contains('active-news-page'))) {
             pages[i].classList.add('active-news-page');
+
+            if (!($('.page-button')[i].className.includes('current'))) {
+                $('.page-button')[i].classList.add('current');
+            }
         } else if ((get_page(pages[i]) !== pageNumber) && (pages[i].classList.contains('active-news-page'))) {
             pages[i].classList.remove('active-news-page');
+
+            if ($('.page-button')[i].className.includes('current')) {
+                $('.page-button')[i].classList.remove('current');
+            }
         }
     }
 
@@ -45,10 +57,35 @@ jQuery(document).ready(function($){
     }
 
     currentPage = parseInt(pageNumber);
+    numPages = parseInt(pages.length);
 
     $('.page-button').click(function(e) {
         e.preventDefault();
-        window.location = 'blog.html#' + get_page($(this));
+        window.location = 'blog.html#' + get_page(this);
+        window.location.reload();
+    });
+
+    $('#previous').click(function(e) {
+        e.preventDefault();
+        var newPage = currentPage - 1;
+
+        if (newPage == 0) {
+            newPage = 1;
+        }
+
+        window.location = 'blog.html#' + newPage.toString();
+        window.location.reload();
+    });
+
+    $('#next').click(function(e) {
+        e.preventDefault();
+        var newPage = currentPage + 1;
+
+        if (newPage > numPages) {
+            newPage = numPages;
+        }
+
+        window.location = 'blog.html#' + newPage.toString();
         window.location.reload();
     });
     
