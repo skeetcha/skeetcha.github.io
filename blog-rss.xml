@@ -6,6 +6,13 @@
         <description>The blog posts from CityboundForest's website.</description>
         <language>en-us</language>
         <item>
+            <title>Stream Schedule for this week</title>
+            <link>https://skeetcha.github.io/blog-item.html#fourthstreamschedule</link>
+            <guid>fourthstreamschedule</guid>
+            <pubDate>Sun, 30 Jan 2022 13:00:00 PST</pubDate>
+            <description>This week's stream schedule (January 31 - February 5, 2022)</description>
+        </item>
+        <item>
             <title>Another New Stream Schedule!</title>
             <link>https://skeetcha.github.io/blog-item.html#thirdstreamschedule</link>
             <guid>thirdstreamschedule</guid>
