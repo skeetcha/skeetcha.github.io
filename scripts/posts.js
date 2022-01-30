@@ -29,10 +29,10 @@ var posts = {
         author: 'blog.post.thirdstreamschedule.author',
         content: 'blog.post.thirdstreamschedule.content'
     },
-    fourthstreamschedule: {
-        title: 'blog.post.fourthstreamschedule.title',
-        date: 'blog.post.fourthstreamschedule.date',
-        author: 'blog.post.fourthstreamschedule.author',
-        content: 'blog.post.fourthstreamschedule.content'
+    streamscheduleandbudgetupdate: {
+        title: 'blog.post.streamscheduleandbudgetupdate.title',
+        date: 'blog.post.streamscheduleandbudgetupdate.date',
+        author: 'blog.post.streamscheduleandbudgetupdate.author',
+        content: 'blog.post.streamscheduleandbudgetupdate.content'
     }
 };
