@@ -6,6 +6,7 @@ var language_data = {
         "socials.youtube": "YouTube",
         "socials.tiktok": "TikTok",
         "socials.twitch": "Twitch",
+        "socials.mastodon": "Mastodon",
 
         "menu.showcase": "Showcase",
         "menu.blog": "Blog",
