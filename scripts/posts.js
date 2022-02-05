@@ -34,5 +34,11 @@ var posts = {
         date: 'blog.post.streamscheduleandbudgetupdate.date',
         author: 'blog.post.streamscheduleandbudgetupdate.author',
         content: 'blog.post.streamscheduleandbudgetupdate.content'
+    },
+    streamschedulepodcastupdate: {
+        title: 'blog.post.streamschedulepodcastupdate.title',
+        date: 'blog.post.streamschedulepodcastupdate.date',
+        author: 'blog.post.streamschedulepodcastupdate.author',
+        content: 'blog.post.streamschedulepodcastupdate.content'
     }
 };

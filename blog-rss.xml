@@ -6,6 +6,13 @@
         <description>The blog posts from CityboundForest's website.</description>
         <language>en-us</language>
         <item>
+            <title>Another Stream Schedule and Podcast Update</title>
+            <link>https://skeetcha.github.io/blog-item.html#streamschedulepodcastupdate</link>
+            <guid>streamschedulepodcastupdate</guid>
+            <pubDate>Sun, 06 Feb 2022 12:00:00 PST</pubDate>
+            <description>The stream schedule for this week (February 7 - 11, 2022) and an important update for The Four Woods Podcast</description>
+        </item>
+        <item>
             <title>Stream Schedule and an Update!</title>
             <link>https://skeetcha.github.io/blog-item.html#streamscheduleandbudgetupdate</link>
             <guid>streamscheduleandbudgetupdate</guid>
