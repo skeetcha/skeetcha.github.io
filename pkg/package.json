@@ -15,6 +15,7 @@
     "cbf_site.js",
     "cbf_site.d.ts"
   ],
-  "browser": "cbf_site.js",
-  "types": "cbf_site.d.ts"
+  "module": "cbf_site.js",
+  "types": "cbf_site.d.ts",
+  "sideEffects": false
 }

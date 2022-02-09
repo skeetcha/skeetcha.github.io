@@ -160,7 +160,21 @@ fn gen_nav(document: &web_sys::Document, body: &web_sys::HtmlElement) -> Result<
 }
 
 fn gen_scripts(document: &web_sys::Document, body: &web_sys::HtmlElement) -> Result<(), JsValue> {
-    for script in ["scripts/jquery-2.1.4.min.js", "scripts/jquery.fitvids.js", "scripts/jquery.imagesloaded.min.js", "scripts/jquery_i18n/CLDRPluralRuleParser.js", "scripts/jquery_i18n/jquery.i18n.js", "scripts/jquery_i18n/jquery.i18n.messagestore.js", "scripts/jquery_i18n/jquery.i18n.fallbacks.js", "scripts/jquery_i18n/jquery.i18n.language.js", "scripts/jquery_i18n/jquery.i18n.parser.js", "scripts/jquery_i18n/jquery.i18n.emitter.js", "scripts/jquery_i18n/jquery.i18n.emitter.bidi.js", "scripts/showdown.min.js", "scripts/lang.js"] {
+    let jquery = document.create_element("script")?;
+    jquery.set_attribute("src", "https://code.jquery.com/jquery-3.6.0.js")?;
+    jquery.set_attribute("integrity", "sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=")?;
+    jquery.set_attribute("crossorigin", "anonymous")?;
+    body.append_child(&jquery)?;
+
+    let fitvids = document.create_element("script")?;
+    fitvids.set_attribute("src", "https://raw.githubusercontent.com/davatron5000/FitVids.js/master/jquery.fitvids.js")?;
+    body.append_child(&fitvids)?;
+
+    let imagesloaded = document.create_element("script")?;
+    imagesloaded.set_attribute("src", "https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js")?;
+    body.append_child(&imagesloaded)?;
+
+    for script in ["https://raw.githubusercontent.com/santhoshtr/CLDRPluralRuleParser/8baf9aedc428924fe6ee508b3d952cb5564efb3a/src/CLDRPluralRuleParser.js", "https://raw.githubusercontent.com/wikimedia/jquery.i18n/master/src/jquery.i18n.js", "https://raw.githubusercontent.com/wikimedia/jquery.i18n/master/src/jquery.i18n.messagestore.js", "https://raw.githubusercontent.com/wikimedia/jquery.i18n/master/src/jquery.i18n.fallbacks.js", "https://raw.githubusercontent.com/wikimedia/jquery.i18n/master/src/jquery.i18n.language.js", "https://raw.githubusercontent.com/wikimedia/jquery.i18n/master/src/jquery.i18n.parser.js", "https://raw.githubusercontent.com/wikimedia/jquery.i18n/master/src/jquery.i18n.emitter.js", "https://raw.githubusercontent.com/wikimedia/jquery.i18n/master/src/jquery.i18n.emitter.bidi.js", " https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js", "scripts/lang.js"] {
         let s = document.create_element("script")?;
         s.set_attribute("src", script)?;
         body.append_child(&s)?;
@@ -177,7 +191,9 @@ pub fn main() -> Result<(), JsValue> {
 
     gen_nav(&document, &body)?;
 
-    // gen_site_container()?;
+    let site_container = document.create_element("div")?;
+    site_container.set_class_name("site-container");
+    body.append_child(&site_container)?;
 
     gen_scripts(&document, &body)?;
 

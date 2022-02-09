@@ -12,12 +12,11 @@
         <script src="scripts/modernizr.js"></script>
     </head>
     <body>
-        <script src="pkg/cbf_site.js"></script>
-        <script>
-            const init = wasm_bindgen;
+        <script type="module">
+            import init from './pkg/cbf_site.js';
 
             async function run() {
-                await wasm_bindgen('./pkg/cbf_site.wasm');
+                await init();
             }
 
             run();
