@@ -24,7 +24,7 @@ function showValidation(el, name) {
 }
 
 (function () {
-    document.body.innerHTML = getBase(true, false, true);
+    document.body.innerHTML = getBase(false, false, true);
 
     document.querySelector('.site-content').innerHTML = `
         <div class="input"><input type="text" required placeholder="Name *" name="name" id="contact-name" /></div>
