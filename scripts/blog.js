@@ -13,7 +13,7 @@ var get_page = (el) => {
 };
 
 (function () {
-    document.body.innerHTML = getBase(false, true, false);
+    document.body.innerHTML = getBase(false, true, false, false);
 
     document.querySelector('.site-content').innerHTML = `
         <div class="page-desc">
@@ -130,6 +130,14 @@ var get_page = (el) => {
 
         window.location = `blog.html#${newPage.toString()}`;
         window.location.reload();
+    });
+
+    document.querySelectorAll('.cd-primary-nav li a').forEach((element, key, parent) => {
+        if (element.href.indexOf('blog.html') != -1) {
+            element.classList.add('selected');
+        } else {
+            element.classList.remove('selected');
+        }
     });
 
     setupNavAnim(document);

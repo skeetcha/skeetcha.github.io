@@ -4,7 +4,7 @@ import setupNavAnim from './nav_anim.js';
 import setupLink from './link_setup.js';
 
 (function() {
-    document.body.innerHTML = getBase(false, false, false);
+    document.body.innerHTML = getBase(false, false, false, false);
     document.querySelector('.site-content').innerHTML = `
         <div class="page-desc">
             <p class="markdown">"Creativity is an energy. It's a precious energy, and it's something to be protected. A lot of people take for granted that they're a creative person, but I know from experience, feeling it in myself, it is a magic; it is an energy. And it can't be taken for granted." --Ava DuVernay</p>

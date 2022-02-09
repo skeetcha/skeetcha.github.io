@@ -1,4 +1,4 @@
-function getHeader(is_index, is_contact) {
+function getHeader(is_index, is_contact, is_blog_post) {
     if (is_index) {
         return `
             <header class="site-header cf">
@@ -19,7 +19,16 @@ function getHeader(is_index, is_contact) {
                 </div>
             </header>
         `;
-    } else {
+    } else if (is_blog_post) {
+        return `
+            <header class="site-header cf">
+                <div class="site-title"><a href="index.html">C/B/F</a></div>
+                <div class="cf"></div>
+                <div class="site-tagline">
+                </div>
+            </header>
+        `;
+    }else {
         return `
             <header class="site-header cf">
                 <div class="site-title"><a href="index.html">C/B/F</a></div>
