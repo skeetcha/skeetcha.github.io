@@ -1,22 +1,18 @@
 function setupLinks(document) {
-    var a = document.getElementsByTagName('a');
-
-    for (var index = 0; index < a.length; index++) {
-        a.item(index).addEventListener('click', (e) => {
-            if (a.item(index).href === null) {
+    document.querySelectorAll('a').forEach((element, key, parent) => {
+        element.addEventListener('click', (e) => {
+            if ((element.href == '') || (element.href == null)) {
                 e.preventDefault();
-            } else if (a.item(index).href == '') {
-                    e.preventDefault();
-            } else if ((a.item(index).href.indexOf('#') == 1) && (a.item(index).href.indexOf('mailto:') == -1) && (a.item(index).href.indexOf('javascript:') == -1) && (a.item(index).target != '_blank')) {
+            } else if ((element.href.indexOf('#') == 1) && (element.href.indexOf('mailto:') == -1) && (element.href.indexOf('javascript:') == -1) && (element.target != '_blank')) {
                 e.preventDefault();
-                var i = a.item(index).href;
+                var i = element.href;
                 document.body.classList.remove('loaded');
                 setTimeout(() => {
                     window.location = i;
                 }, 250);
             }
         }, false);
-    }
+    });
 }
 
 export default setupLinks;
