@@ -1,9 +1,11 @@
+let wasm_bindgen;
+(function() {
+    const __exports = {};
+    let wasm;
 
-let wasm;
+    const heap = new Array(32).fill(undefined);
 
-const heap = new Array(32).fill(undefined);
-
-heap.push(undefined, null, true, false);
+    heap.push(undefined, null, true, false);
 
 function getObject(idx) { return heap[idx]; }
 
@@ -103,17 +105,17 @@ function passStringToWasm0(arg, malloc, realloc) {
 /**
 * @param {string} name
 */
-export function greet(name) {
+__exports.greet = function(name) {
     var ptr0 = passStringToWasm0(name, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
     var len0 = WASM_VECTOR_LEN;
     wasm.greet(ptr0, len0);
-}
+};
 
 /**
 */
-export function main() {
+__exports.main = function() {
     wasm.main();
-}
+};
 
 function isLikeNone(x) {
     return x === undefined || x === null;
@@ -160,7 +162,13 @@ async function load(module, imports) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('cbf_site_bg.wasm', import.meta.url);
+        let src;
+        if (typeof document === 'undefined') {
+            src = location.href;
+        } else {
+            src = document.currentScript.src;
+        }
+        input = src.replace(/\.js$/, '_bg.wasm');
     }
     const imports = {};
     imports.wbg = {};
@@ -255,5 +263,6 @@ async function init(input) {
     return wasm;
 }
 
-export default init;
+wasm_bindgen = Object.assign(init, __exports);
 
+})();
