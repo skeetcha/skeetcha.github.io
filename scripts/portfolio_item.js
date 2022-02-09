@@ -67,7 +67,7 @@ function nextProject(e) {
 }
 
 (function () {
-    document.body.innerHTML = getBase(false, true);
+    document.body.innerHTML = getBase(false, true, false);
 
     document.querySelector('.site-content').innerHTML = `
         <div class="page-desc">
