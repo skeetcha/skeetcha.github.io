@@ -24,6 +24,7 @@ var get_page = (el) => {
     `;
 
     var postData = getPosts();
+    postData.reverse();
 
     for (var i = 0; i < postData.length; i += 5) {
         document.querySelector('.site-content').innerHTML += `
