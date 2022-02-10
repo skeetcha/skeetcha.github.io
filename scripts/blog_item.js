@@ -6,6 +6,11 @@ import getPosts from './posts.js';
 
 var converter = new showdown.Converter();
 
+var disqus_config = function () {
+    this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = window.location.hash.substring(1); // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
 (function () {
     document.body.innerHTML = getBase(false, true, false, true);
 
@@ -47,9 +52,8 @@ var converter = new showdown.Converter();
         <div class="page-desc" id="blog-post-content">${content}</div>
     `;
 
-    document.querySelector('.site-container').innerHTML += `
-        <div id="disqus_thread style="margin:0 auto;width:75%;">
-            <script src="scripts/disqus.js"></script>
+    document.querySelector('.site-content').innerHTML += `
+        <div id="disqus_thread" style="margin:0 auto;width:75%;">
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </div>
     `;
@@ -70,6 +74,11 @@ var converter = new showdown.Converter();
             element.classList.remove('selected');
         }
     });
+
+    var d = document, s = d.createElement('script');
+    s.src = 'https://cityboundforest.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
 
     setupNavAnim(document);
     parseMarkdown(document);
