@@ -63,6 +63,14 @@ function getPosts() {
             author: 'Cass Forest',
             content: 'Hey everyone! I\'ve got some news on The Four Woods Podcast as well as a new stream schedule for this week!\n\n---\n\n### Stream Schedule\n\nHere\'s the stream schedule for this week. Enjoy!\n\n![Stream schedule for February 14-19, 2022; all streams are at 1:00 pm PST. Monday\'s stream is Pokemon GenLocke Part 1: FireRed with a re-run at 11:20 am PST. Wednesday\'s stream is The Legend of Zelda: Majora\'s Mask with a re-run at 10:40 am PST. Thursday\'s stream is Fire Emblem: Three Houses with a re-run at 11:00 am PST. Friday\'s stream is Octopath Traveler with a re-run at 11:20 am PST. Saturday\'s stream is Minecraft with my friend KniightRyder with a re-run at 10:45 am PST.](https://imgur.com/78te2aS.png)\n\n---\n\n### The Four Woods Podcast Update\n\nSometime this week, I will be posting a video outlining everything in the future for The Four Woods Podcast. This includes the budget that I\'ve been mentioning here on the blog as well as a call for writers to send in applications to write for the podcast. When the video is posted, I\'ll link to it on my Twitter page and I\'ll post it on my Instagram and TikTok accounts. I\'ll also be linking to it here, so if you\'ve subscribed to the [RSS feed](https://skeetcha.github.io/blog-rss.xml), then you\'ll be able to know when it comes out.\n\n---\n\nIn any case, that\'s all from me. See you over on Twitch!',
             description: 'The stream schedule for February 14-19, 2022 alongside a small update for The Four Woods Podcast'
+        },
+        {
+            id: 'streamschedulevideocoming',
+            title: 'A Stream Schedule And A Video Delayed',
+            date: '2022 February 20',
+            author: 'Cass Forest',
+            content: 'Hey everyone! The update video for The Four Woods Podcast is coming, probably sometime this week, but I haven\'t found time to sit down and edit the video just yet. Hang tight, I\'ll be posting it on both my main channel (CityboundForest) and the YouTube channel for the podcast itself. Stay tuned for that. But until then, here\'s the stream schedule for the upcoming week!\n\n![Stream schedule for February 21-25, all streams are at 1:00 pm PST. Monday\'s stream is Pokemon GenLocke Part 1: FireRed with a re-run at 11:20 am PST. Wednesday\'s stream is The Legend of Zelda: Major\'s Mask with a re-run at 11:10 am PST. Thursday\'s stream is Fire Emblem: Three Houses with a re-run at 11:00 am PST. Friday\'s stream is Octopath Traveler with a re-run at 11:10 am PST.](https://imgur.com/XVjdbgC.png)\n\nThat\'s all from me, see y\'all on Twitch!',
+            description: 'The stream schedule for February 21-25, 2022 and I promise, the update video is coming this week'
         }
     ];
 }
