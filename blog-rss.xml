@@ -6,6 +6,13 @@
         <description>The blog posts from CityboundForest's website.</description>
         <language>en-us</language>
         <item>
+            <title>New stream schedule for Twitch!</title>
+            <link>https://skeetcha.github.io/blog-item.html#streamschedule22feb24mar5</link>
+            <guid>streamschedule22feb24mar5</guid>
+            <pubDate>Sun 27 Feb 2022 12:00:00</pubDate>
+            <description>The stream schedule for February 28-March 5, 2022</description>
+        </item>
+        <item>
             <title>A Stream Schedule And A Video Delayed</title>
             <link>https://skeetcha.github.io/blog-item.html#streamschedulevideocoming</link>
             <guid>streamschedulevideocoming</guid>

@@ -71,6 +71,14 @@ function getPosts() {
             author: 'Cass Forest',
             content: 'Hey everyone! The update video for The Four Woods Podcast is coming, probably sometime this week, but I haven\'t found time to sit down and edit the video just yet. Hang tight, I\'ll be posting it on both my main channel (CityboundForest) and the YouTube channel for the podcast itself. Stay tuned for that. But until then, here\'s the stream schedule for the upcoming week!\n\n![Stream schedule for February 21-25, all streams are at 1:00 pm PST. Monday\'s stream is Pokemon GenLocke Part 1: FireRed with a re-run at 11:20 am PST. Wednesday\'s stream is The Legend of Zelda: Major\'s Mask with a re-run at 11:10 am PST. Thursday\'s stream is Fire Emblem: Three Houses with a re-run at 11:00 am PST. Friday\'s stream is Octopath Traveler with a re-run at 11:10 am PST.](https://imgur.com/XVjdbgC.png)\n\nThat\'s all from me, see y\'all on Twitch!',
             description: 'The stream schedule for February 21-25, 2022 and I promise, the update video is coming this week'
+        },
+        {
+            id: 'streamschedule22feb24mar5',
+            title: 'New stream schedule for Twitch!',
+            date: '2022 February 27',
+            author: 'Cass Forest',
+            content: 'Hey everyone! I\'ve been working on editing the update video for the Four Woods Podcast so that is coming soon (or it may have already been posted by the time this goes up, who knows!), so stay tuned for that. Until then, here\'s this week\'s stream schedule!\n\n![Stream schedule for February 28 - March 5, 2022. All streams are at 1:00 pm PST. Monday\'s stream is Pokemon GenLocke I: FireRed with a re-run at 11:20 am PST. Wednesday\'s stream is The Legend of Zelda: Majora\'s Mask with a re-run at 10:40 am PST. Thursday\'s stream is Fire Emblem: Three Houses with a re-run at 11:10 am PST. Friday\'s stream is Octopath Traveler with a re-run at 11:10 am PST. Saturday\'s stream is Minecraft with my friend KniightRyder with a re-run at 11:10 am PST.](https://imgur.com/FQ9StX0.png)\n\nThat\'s all from me, see you over on Twitch!',
+            description: 'The stream schedule for February 28-March 5, 2022'
         }
     ];
 }
