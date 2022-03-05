@@ -79,6 +79,14 @@ function getPosts() {
             author: 'Cass Forest',
             content: 'Hey everyone! I\'ve been working on editing the update video for the Four Woods Podcast so that is coming soon (I recently switched to a new video editing program, so it\'s been A Time<sup>tm</sup> to learn, but I\'m starting to get into a groove with it), so stay tuned for that. I\'m also still working on getting subtitles added to the YouTube video for the first episode of the show, so the update video won\'t come out until those are finished. Until the video releases, here\'s this week\'s stream schedule!\n\n![Stream schedule for February 28 - March 5, 2022. All streams are at 1:00 pm PST. Monday\'s stream is Pokemon GenLocke I: FireRed with a re-run at 11:20 am PST. Wednesday\'s stream is The Legend of Zelda: Majora\'s Mask with a re-run at 10:40 am PST. Thursday\'s stream is Fire Emblem: Three Houses with a re-run at 11:10 am PST. Friday\'s stream is Octopath Traveler with a re-run at 11:10 am PST. Saturday\'s stream is Minecraft with my friend KniightRyder with a re-run at 11:10 am PST.](https://imgur.com/FQ9StX0.png)\n\nThat\'s all from me, see you over on Twitch!',
             description: 'The stream schedule for February 28-March 5, 2022'
+        },
+        {
+            id: 'streamschedule22mar7mar12',
+            title: 'Another new stream schedule with a new game!',
+            date: '2022 March 6',
+            author: 'Cass Forest',
+            content: 'Hey everyone! I\'m still hard at work adding captions to the video for the first episode of the Four Woods Podcast along with keeping up with my rigorous content schedule and also working on finding a stable job, so the update video for the Four Woods Podcast will have to wait just a bit (along with a couple other video projects I wanted to get working on, but that\'s besides the point). Anyway, I\'m here today with a new stream schedule and a new game to add to the schedule! Enjoy!\n\n![Stream schedule for this week, all streams are at 1:00 pm PST. Monday\'s stream is Pokemon GenLocke I: FireRed with a re-run at 11:15 am PST. Wednesday\'s stream is Pokemon: Legends Arceus. Thursday\'s stream is Fire Emblem: Three Houses with a re-run at 11:10 am PST. Friday\'s stream is Octopath Traveler with a re-run at 11:10 am PST. Saturday\'s stream is Minecraft with my friend KniightRyder with a re-run at 11:10 am PST.](https://imgur.com/BHkQRe7.png)\n\n---\n\nThat\'s all from me for this week, I\'ll see y\'all over on Twitch!',
+            description: 'The stream schedule for March 7-12, 2022'
         }
     ];
 }
