@@ -18,7 +18,7 @@ var get_page = (el) => {
     document.querySelector('.site-content').innerHTML = `
         <div class="page-desc">
             <h4>Personal Blog</h4>
-            <a href="blog-rss.xml"<img src="img/rss-icon.png" alt="rss-icon" style="width:20px;height:20px;" /></a>
+            <a href="blog-rss.xml"><img src="img/rss-icon.png" alt="rss-icon" style="width:20px;height:20px;" /></a>
             <p>Random postings, news, and other thoughts coming soon!</p>
         </div>
     `;
