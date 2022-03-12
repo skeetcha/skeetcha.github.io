@@ -87,6 +87,14 @@ function getPosts() {
             author: 'Cass Forest',
             content: 'Hey everyone! I\'m still hard at work adding captions to the video for the first episode of the Four Woods Podcast along with keeping up with my rigorous content schedule and also working on finding a stable job, so the update video for the Four Woods Podcast will have to wait just a bit (along with a couple other video projects I wanted to get working on, but that\'s besides the point). Anyway, I\'m here today with a new stream schedule and a new game to add to the schedule! Enjoy!\n\n![Stream schedule for this week, all streams are at 1:00 pm PST unless otherwise stated. Monday\'s stream is Pokemon GenLocke I: FireRed with a re-run at 11:15 am PST. Wednesday\'s stream is Pokemon: Legends Arceus. Thursday\'s stream is Fire Emblem: Three Houses with a re-run at 11:10 am PST. Friday\'s stream is Octopath Traveler with a re-run at 11:10 am PST. Saturday\'s stream is Minecraft with my friend KniightRyder at 2:30 pm PST with a re-run at 12:40 pm PST.](https://imgur.com/VoxwxJk.png)\n\n---\n\nThat\'s all from me for this week, I\'ll see y\'all over on Twitch!',
             description: 'The stream schedule for March 7-12, 2022'
+        },
+        {
+            id: 'streamschedule22mar14mar18',
+            title: 'Stream schedule for this week',
+            date: '2022 March 13',
+            author: 'Cass Forest',
+            content: 'Hey everyone! I\'m going to pull back on the number of streams I\'m doing each week, but I won\'t be pulling back on the content that I\'m putting out; I\'ll still be finishing all of the series that I\'ve started on my Twitch channel, so don\'t worry! Anyway, onto the stream schedule for this week.\n\n![Stream schedule for March 14 - 18, 2022; all streams are at 1:00 pm PDT. Monday\'s stream is Pokemon GenLocke I: FireRed with a re-run at 11:15 am PDT. Wednesday\'s stream is The Legend of Zelda: Majora\'s Mask with a re-run at 10:40 am PDT. Friday\'s stream is Octopath Traveler with a re-run at 11:10 am PDT.](https://imgur.com/XSPyQk2.png)\n\n---\n\nThat\'s all from me for now, see you all on Twitch!',
+            description: 'The stream schedule for March 14-18, 2022'
         }
     ];
 }
