@@ -6,6 +6,13 @@
         <description>The blog posts from CityboundForest's website.</description>
         <language>en-us</language>
         <item>
+            <title>An Explanation</title>
+            <link>https://skeetcha.github.io/blog-item.html#explanation</link>
+            <guid>explanation</guid>
+            <pubDate>Fri, 08 Apr 2022 12:00:00</pubDate>
+            <description>An explanation for why I've been gone.</description>
+        </item>
+        <item>
             <title>Stream schedule for this week</title>
             <link>https://skeetcha.github.io/blog-item.html#streamschedule22mar21mar26</link>
             <guid>streamschedule22mar21mar26</guid>
