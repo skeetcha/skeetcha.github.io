@@ -1,4 +1,4 @@
 ---
 layout: redirect
-redirect: http://cityboundforest.netlify.app/audio-credits
+redirect: http://cityboundforest.com/audio-credits
 ---

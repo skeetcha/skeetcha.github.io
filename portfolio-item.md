@@ -1,4 +1,4 @@
 ---
 layout: redirect
-redirect: http://cityboundforest.netlify.app/portfolio
+redirect: http://cityboundforest.com/portfolio
 ---
